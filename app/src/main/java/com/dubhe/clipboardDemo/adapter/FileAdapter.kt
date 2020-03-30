@@ -14,6 +14,7 @@ import com.orhanobut.logger.Logger
 import com.rice.dialog.OkCancelDialog
 import com.rice.tool.FileMamagerHelper
 import com.rice.tool.TextUtils
+import com.rice.tool.ToastUtil
 import java.io.File
 
 
@@ -21,7 +22,7 @@ import java.io.File
  * Created by wry on 2018-05-04 17:10
  */
 class FileAdapter(data: MutableList<File?>, var dirPath: String) :
-        BaseQuickAdapter<File, BaseViewHolder>(R.layout.item_file, data) {
+    BaseQuickAdapter<File, BaseViewHolder>(R.layout.item_file, data) {
 
     private var mOnEditClick: OnEditClick? = null
     private var mOnDeleteClick: OnDeleteClick? = null
@@ -65,7 +66,8 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
      * 复制文件
      */
     private fun copyFile(file: File) {
-        val clipboardmanager: ClipboardManager? = mContext.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
+        val clipboardmanager: ClipboardManager? =
+            mContext.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
 // Creates a Uri based on a base Uri and a record ID based on the contact's last name
 // Declares the base URI string
 
@@ -78,6 +80,7 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
 // the Uri previously created.
         val clip = ClipData.newUri(mContext.contentResolver, "URI", copyUri)
         clipboardmanager?.setPrimaryClip(clip)
+        ToastUtil.showShort("文件${file.name}已复制到剪贴板")
     }
 
 
@@ -123,7 +126,7 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
     /**
      * 进入子目录
      */
-    public fun enterDir(item: File) {
+    fun enterDir(item: File) {
         val files = FileMamagerHelper.getFiles(item)
         data.clear()
         data.add(null)
@@ -137,16 +140,16 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
     /**
      * @return 是否已在最外层
      */
-    public fun isSdRoot(): Boolean {
+    fun isSdRoot(): Boolean {
 //        return dirPath == Environment.getExternalStorageDirectory().toString() + File.separator || dirPath == Environment.getExternalStorageDirectory().toString()
-        return dirPath == "/storage" || dirPath == "/"
+        return dirPath == "/storage/emulated/0" || dirPath == "/" || dirPath == "/storage/emulated/0/"
     }
 
     /**
      * 返回上级目录，如果已在最外层不会做任何操作
      * @return 是否已在最外层
      */
-    public fun backDir(): Boolean {
+    fun backDir(): Boolean {
         if (isSdRoot()) {
             //已经在最外层
             return true

@@ -5,9 +5,12 @@ import android.text.TextUtils;
 import android.webkit.MimeTypeMap;
 
 import java.io.File;
+import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -26,10 +29,24 @@ public class FileMamagerHelper {
             File[] files = file.listFiles();
             List<File> filterFile = new ArrayList<>();
             if (Collections.addAll(filterFile, files)) {
+                sortString(filterFile);
                 return filterFile;
             }
         }
         return null;
+    }
+
+    /**
+     * 按文件名排序（A→Z）
+     */
+    public static void sortString(List<File> filterFile) {
+        Collections.sort(filterFile, (o1, o2) -> {
+            if (o1.isDirectory() && o2.isFile())
+                return -1;
+            if (o1.isFile() && o2.isDirectory())
+                return 1;
+            return o1.getName().compareTo(o2.getName());
+        });
     }
 
     /**
@@ -59,6 +76,7 @@ public class FileMamagerHelper {
 
     /**
      * 得到上一级目录
+     *
      * @param filePath
      * @return
      */
@@ -145,6 +163,7 @@ public class FileMamagerHelper {
 
     /**
      * 获得文件的后缀
+     *
      * @param file
      * @return
      */
