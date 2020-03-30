@@ -1,5 +1,6 @@
 package com.dubhe.clipboardDemo
 
+import android.annotation.SuppressLint
 import android.app.Application
 import androidx.multidex.MultiDexApplication
 import com.lky.toucheffectsmodule.TouchEffectsManager
@@ -8,15 +9,19 @@ import com.lky.toucheffectsmodule.types.TouchEffectsViewType
 import com.lky.toucheffectsmodule.types.TouchEffectsWholeType
 import com.rice.tool.ToastUtil
 
+@SuppressLint("Registered")
 class MyApplication : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
+        instant = this
         ToastUtil.init(this)
-
     }
 
-    companion object{
+    companion object {
+
+        lateinit var instant: MyApplication
+
         init {
             TouchEffectsManager.build(TouchEffectsWholeType.RIPPLE)//设置全局使用哪种效果
                 .addViewType(TouchEffectsViewType.LinearLayout)//添加哪些View支持这个效果

@@ -8,6 +8,7 @@ import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.dubhe.clipboardDemo.activity.FileManagerActivity
+import com.dubhe.clipboardDemo.activity.ImActivity
 import com.dubhe.imageselector.Path.REQUEST_PERMISSIONS
 import com.rice.base.RiceBaseActivity
 import com.rice.dialog.OkCancelDialog
@@ -27,6 +28,9 @@ class MainActivity : RiceBaseActivity() {
     override fun initView() {
         btnOpenFileManager.setOnClickListener {
             ActivityUtils.openActivity(mContext, FileManagerActivity::class.java)
+        }
+        btnToImActivity.setOnClickListener {
+            ActivityUtils.openActivity(mContext, ImActivity::class.java)
         }
         permissionDialog = OkCancelDialog(this)
         permissionDialog.setTitle("温馨提示")
@@ -49,18 +53,18 @@ class MainActivity : RiceBaseActivity() {
     fun initPermission(forceRequest: Boolean) {
         val TAG = "---申请权限---"
         val permissions = arrayOf(
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE
         )
         //检查权限
         if (ContextCompat.checkSelfPermission(
-                mContext,
-                Manifest.permission.READ_EXTERNAL_STORAGE
-            ) != PackageManager.PERMISSION_GRANTED
-            || ContextCompat.checkSelfPermission(
-                mContext,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-            ) != PackageManager.PERMISSION_GRANTED
+                        mContext,
+                        Manifest.permission.READ_EXTERNAL_STORAGE
+                ) != PackageManager.PERMISSION_GRANTED
+                || ContextCompat.checkSelfPermission(
+                        mContext,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE
+                ) != PackageManager.PERMISSION_GRANTED
         ) {
             //判断权限是否被拒绝过
             if (forceRequest) {
@@ -68,13 +72,13 @@ class MainActivity : RiceBaseActivity() {
                 Log.d(TAG, "强制申请")
                 ActivityCompat.requestPermissions(this, permissions, REQUEST_PERMISSIONS)
             } else if (ActivityCompat.shouldShowRequestPermissionRationale(
-                    this,
-                    Manifest.permission.READ_CONTACTS
-                )
-                || ActivityCompat.shouldShowRequestPermissionRationale(
-                    this,
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE
-                )
+                            this,
+                            Manifest.permission.READ_CONTACTS
+                    )
+                    || ActivityCompat.shouldShowRequestPermissionRationale(
+                            this,
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE
+                    )
             ) {
                 //用户曾拒绝过权限
                 Log.d(TAG, "用户曾拒绝过权限")
@@ -98,9 +102,9 @@ class MainActivity : RiceBaseActivity() {
      * @param grantResults 请求结果
      */
     override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<String>,
-        grantResults: IntArray
+            requestCode: Int,
+            permissions: Array<String>,
+            grantResults: IntArray
     ) {
         when (requestCode) {
             REQUEST_PERMISSIONS -> if (grantResults.size > 1) {

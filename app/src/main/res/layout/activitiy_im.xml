@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--聊天界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F9"
+    android:orientation="vertical">
+
+    <com.rice.view.RiceToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerIM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/llInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#E7E4E7"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_white"
+            android:maxHeight="100dp"
+            android:paddingStart="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/black3"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textPaste"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="粘贴"
+            android:textColor="@color/black3"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
