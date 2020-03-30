@@ -1,0 +1,117 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+	package
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:2:5-33
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:7:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.CAMERA
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:12:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:13:22-63
+application
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:15:5-39:19
+activity#com.rice.activity.BaseSettingActivity
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:16:9-19:52
+	android:screenOrientation
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:19:13-49
+	android:launchMode
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:18:13-44
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:17:13-65
+activity#com.rice.activity.WebViewActivity
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:20:9-23:52
+	android:screenOrientation
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:23:13-49
+	android:launchMode
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:22:13-44
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:21:13-61
+activity#com.dubhe.imageselector.ClipImageActivity
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:24:9-27:52
+	android:screenOrientation
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:27:13-49
+	android:launchMode
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:26:13-44
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:25:13-69
+activity#com.rice.activity.ScanQRActivity
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:28:9-31:52
+	android:screenOrientation
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:31:13-49
+	android:launchMode
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:30:13-44
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:29:13-60
+activity#com.rice.activity.BannerDetailActivity
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:32:9-35:52
+	android:screenOrientation
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:35:13-49
+	android:launchMode
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:34:13-44
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:33:13-66
+activity#com.rice.activity.WebViewInAppActivity
+ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:36:9-38:52
+	android:screenOrientation
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml:37:13-66
+uses-sdk
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProjects\wohe\riceframe\src\main\AndroidManifest.xml

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <group>
+        <path
+            android:name="canvas_background"
+            android:fillColor="#00000000"
+            android:pathData="M -1,-1 L 1025,-1 L 1025,1025 L -1,1025 z" />
+    </group>
+    <group>
+        <path
+            android:name="svg_2"
+            android:fillColor="#FFFFFF"
+            android:pathData="M 512,2.19 C 795.04,2.19 1024.5,231.64 1024.5,514.68 C 1024.5,797.73 795.04,1027.18 512,1027.18 C 228.96,1027.18 -0.5,797.73 -0.5,514.68 C -0.5,231.64 228.96,2.19 512,2.19 z"
+            android:strokeWidth="0"
+            android:strokeColor="#000000" />
+        <group android:name="svg_27">
+            <path
+                android:name="svg_26"
+                android:fillColor="#FF000000"
+                android:pathData="m770.944883 271.54842l0 166.462434l-36.996719 0l0 -147.969133l-147.969642 0l0 -36.986584l184.965853 0l0 18.493292l0.000509 0l0 -0.000009zm-480.892483 437.73083l158.803133 -158.813269l26.152593 26.193635l-157.29864 157.287995l120.290767 0l0 36.997228l-184.945081 0l0 -184.965861l36.997228 0l0 123.290137l0 0.010135zm258.929402 -258.960309l183.118808 -183.108172l26.152593 26.194143l-183.108681 183.108172l-26.152584 -26.194143l-0.010135 0z"
+                android:strokeColor="#000000" />
+        </group>
+    </group>
+</vector>

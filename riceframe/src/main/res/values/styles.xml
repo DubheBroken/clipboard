@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WarpLinearLayout">
+        <attr name="grivate" format="enum"><!--对齐方式 !-->
+            <enum name="right" value="0" />
+            <enum name="left" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <attr name="horizontal_Space" format="dimension" />
+        <attr name="vertical_Space" format="dimension" />
+        <attr name="isFull" format="boolean" />
+    </declare-styleable>
+
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+	
+	 <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BottomDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/tranlate_dialog_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_dialog_out_bottom</item>
+    </style>
+	
+    <style name="centerDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+</resources>

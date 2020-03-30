@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <group>
+        <path
+            android:name="canvas_background"
+            android:fillColor="#00000000"
+            android:pathData="M -1,-1 L 581,-1 L 581,401 L -1,401 z" />
+    </group>
+    <group>
+        <path
+            android:name="svg_2"
+            android:fillColor="#FFFFFF"
+            android:pathData="M 512,2.19 C 795.04,2.19 1024.5,231.64 1024.5,514.68 C 1024.5,797.73 795.04,1027.18 512,1027.18 C 228.96,1027.18 -0.5,797.73 -0.5,514.68 C -0.5,231.64 228.96,2.19 512,2.19 z"
+            android:strokeWidth="0"
+            android:strokeColor="#000000" />
+        <group
+            android:name="svg_10"
+            android:pivotX="519.92834"
+            android:pivotY="505.92834"
+            android:rotation="0.080565356">
+            <path
+                android:name="svg_6"
+                android:fillColor="#FF000000"
+                android:pathData="m723.2551 403.831662l-34.192154 129.411898l-32.630321 -129.771309l-108.583518 -40.445711l109.040055 -39.199753l34.192154 -129.387937l32.654349 129.81923l108.55949 40.42175l-109.040055 39.151832z"
+                android:strokeColor="#000000" />
+            <path
+                android:name="svg_7"
+                android:fillColor="#FF000000"
+                android:pathData="m461.107239 532.836227l-4.180911 -95.603309l-70.25851 -43.896056l82.032337 -11.812639l42.578002 -85.77941l4.204938 95.62727l70.210454 43.872095l-82.008309 11.8366l-42.578002 85.755449z"
+                android:strokeColor="#000000" />
+            <path
+                android:name="svg_8"
+                android:fillColor="#FF000000"
+                android:pathData="m616.233416 452.42402l9.563231 56.762967l45.17305 21.109402l-48.152549 13.058597l-19.126462 54.366895l-9.515174 -56.83485l-45.197079 -21.109402l48.128521 -13.034637l19.126461 -54.318973z"
+                android:strokeColor="#000000" />
+            <path
+                android:name="svg_9"
+                android:fillColor="#FF000000"
+                android:pathData="m472.040079 271.209026l-153.227948 0c-36.162468 0 -65.597036 29.351893 -65.597036 65.41279l0 369.857814c0 36.060897 29.434567 65.41279 65.597036 65.41279l370.875549 0c36.186497 0 65.597036 -29.351893 65.597036 -65.41279l0 -155.361367c17.516571 -12.555422 32.918659 -27.794446 45.653615 -45.189935l0.000001 200.551303c0 61.291545 -49.786468 110.938176 -111.274679 110.938176l-370.851521 0c-61.464182 0 -111.25065 -49.646631 -111.25065 -110.938176l0 -369.833853c0 -61.315506 49.786468 -110.962137 111.25065 -110.962137l197.608067 0c-17.060035 12.795029 -32.1017 28.105935 -44.380119 45.525385z"
+                android:strokeColor="#000000" />
+        </group>
+    </group>
+</vector>

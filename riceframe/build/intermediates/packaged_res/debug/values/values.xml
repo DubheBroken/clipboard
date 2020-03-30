@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="setting_icon">
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+        <item>@drawable/ic_minefragment_setting</item>
+    </integer-array>
+    <string-array name="setting_str">
+        <item>设置1</item>
+        <item>设置2</item>
+        <item>设置3</item>
+        <item>设置4</item>
+        <item>设置5</item>
+        <item>设置6</item>
+        <item>设置7</item>
+        <item>设置8</item>
+        <item>设置9</item>
+        <item>设置10</item>
+        <item>设置11</item>
+    </string-array>
+    <attr format="dimension" name="arcHeight"/>
+    <color name="a1">#FF48bc1b</color>
+    <color name="a2">#1A000000</color>
+    <color name="a3">#1A000000</color>
+    <color name="black">#000000</color>
+    <color name="black01">#010101</color>
+    <color name="black2">#222222</color>
+    <color name="black20">#32000000</color>
+    <color name="black3">#333333</color>
+    <color name="black50">#80000000</color>
+    <color name="black_login">#313136</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#0071fd</color>
+    <color name="colorPrimaryDark">#0071fd</color>
+    <color name="gray9">#999999</color>
+    <color name="graye5">#e5e5e5</color>
+    <color name="grayf4">#f4f4f4</color>
+    <color name="grayf5">#f5f5f5</color>
+    <color name="theme_black">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white25">#40FFFFFF</color>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_320">320dp</dimen>
+    <dimen name="dp_400">400dp</dimen>
+    <dimen name="height_ok_cancel_dialog">200dp</dimen>
+    <dimen name="width_ok_cancel_dialog">320dp</dimen>
+    <string name="app_name">RiceFrame</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="register">注册</string>
+    <string name="submit">提交</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="BottomDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/tranlate_dialog_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_dialog_out_bottom</item>
+    </style>
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+    <style name="centerDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <declare-styleable name="ArcImageView">
+        <attr name="arcHeight"/>
+    </declare-styleable>
+    <declare-styleable name="ArcView">
+        <attr name="arcHeight"/>
+        <attr format="color" name="bgColor"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_fill_color"/>
+    </declare-styleable>
+    <declare-styleable name="CircleView">
+        <attr format="color" name="cir_color"/>
+    </declare-styleable>
+    <declare-styleable name="ClipViewLayout">
+        <attr format="enum" name="clipType">
+            <enum name="circle" value="1"/>
+            <enum name="rectangle" value="2"/>
+        </attr>
+        <attr format="dimension" name="mHorizontalPadding"/>
+        <attr format="dimension" name="clipBorderWidth"/>
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr format="color" name="pstsIndicatorColor"/>
+        <attr format="color" name="pstsUnderlineColor"/>
+        <attr format="color" name="pstsDividerColor"/>
+        <attr format="dimension" name="pstsIndicatorHeight"/>
+        <attr format="dimension" name="pstsUnderlineHeight"/>
+        <attr format="dimension" name="pstsDividerPadding"/>
+        <attr format="dimension" name="pstsIndicatorPadding"/>
+        <attr format="dimension" name="pstsIndicatorRcRadio"/>
+        <attr format="dimension" name="pstsTabPaddingLeftRight"/>
+        <attr format="dimension" name="pstsTabTextSize"/>
+        <attr format="dimension" name="pstsNewTabTextSize"/>
+        <attr format="dimension" name="pstsScrollOffset"/>
+        <attr format="reference" name="pstsTabBackground"/>
+        <attr format="boolean" name="pstsShouldExpand"/>
+        <attr format="boolean" name="pstsTextAllCaps"/>
+        <attr format="color" name="pstsTabTextColor"/>
+        <attr format="color" name="pstsNewTextColor"/>
+    </declare-styleable>
+    <declare-styleable name="RiceToolbar">
+        <attr format="enum" name="backMode">
+            <enum name="mode_text" value="0"/>
+            <enum name="mode_img" value="1"/>
+            <enum name="mode_hide" value="2"/>
+        </attr>
+        <attr format="enum" name="okMode">
+            <enum name="mode_text" value="0"/>
+            <enum name="mode_img" value="1"/>
+            <enum name="mode_hide" value="2"/>
+        </attr>
+        <attr format="enum" name="titleMode">
+            <enum name="mode_text" value="0"/>
+            <enum name="mode_img" value="1"/>
+            <enum name="mode_hide" value="2"/>
+        </attr>
+        <attr format="string" name="title"/>
+        <attr format="string" name="okText"/>
+        <attr format="color" name="textColor"/>
+        <attr format="reference" name="background"/>
+        <attr format="reference" name="backImg"/>
+        <attr format="reference" name="okImg"/>
+    </declare-styleable>
+    <declare-styleable name="WarpLinearLayout">
+        <attr format="enum" name="grivate"><!--对齐方式 !-->
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+        <attr format="dimension" name="horizontal_Space"/>
+        <attr format="dimension" name="vertical_Space"/>
+        <attr format="boolean" name="isFull"/>
+    </declare-styleable>
+</resources>

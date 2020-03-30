@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RiceFrame</string>
+	<string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="register">注册</string>
+    <string name="submit">提交</string>
+</resources>

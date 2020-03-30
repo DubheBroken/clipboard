@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+	<dimen name="dp_400">400dp</dimen>
+    <dimen name="width_ok_cancel_dialog">320dp</dimen>
+    <dimen name="height_ok_cancel_dialog">200dp</dimen>
+    <dimen name="dp_320">320dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow">
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="支出/收入"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTypeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="用途"
+        android:textColor="#ff4f4f4f"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textType" />
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:text="20.00"
+        android:textColor="#ff000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="￥"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/textPrice"
+        app:layout_constraintTop_toTopOf="@+id/textPrice" />
+
+    <TextView
+        android:id="@+id/textStatusTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="交易状态"
+        android:textColor="#4f4f4f"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/textTimeTag"
+        app:layout_constraintStart_toStartOf="@+id/textTypeInfo" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="交易成功"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textStatusTag"
+        app:layout_constraintStart_toEndOf="@+id/textStatusTag"
+        app:layout_constraintTop_toTopOf="@+id/textStatusTag" />
+
+    <TextView
+        android:id="@+id/textTimeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交易时间"
+        android:textColor="#4f4f4f"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textTypeInfo" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="2019年5月9日 14:08"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTimeTag"
+        app:layout_constraintStart_toEndOf="@+id/textTimeTag"
+        app:layout_constraintTop_toTopOf="@+id/textTimeTag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
