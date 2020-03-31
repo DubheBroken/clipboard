@@ -30,8 +30,8 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
     private var onDataUpdateListener: OnDataUpdateListener? = null
     lateinit var okCancelDialog: OkCancelDialog
 
-    val CONTACTS = "content://com.example.contacts"
-    val COPY_PATH = "/copy"// Declares the Uri to paste to the clipboard
+//    val CONTACTS = "content://com.example.contacts"
+//    val COPY_PATH = "/copy"// Declares the Uri to paste to the clipboard
 
     override fun convert(helper: BaseViewHolder, item: File?) {
         if (item == null) {
@@ -73,7 +73,7 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
 
 // Declares a path string for URIs that you use to copy data
 
-        val copyUri = Uri.parse("$CONTACTS$COPY_PATH/$file")
+        val copyUri = Uri.parse("$file")
 
 // Creates a new URI clip object. The system uses the anonymous getContentResolver() object to
 // get MIME types from provider. The clip object's label is "URI", and its data is
@@ -82,7 +82,6 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
         clipboardmanager?.setPrimaryClip(clip)
         ToastUtil.showShort("文件${file.name}已复制到剪贴板")
     }
-
 
 //    /**
 //     * 打开文件
@@ -154,7 +153,7 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
             //已经在最外层
             return true
         }
-        var newPath = dirPath.substring(0, dirPath.lastIndexOf("/") + 1)
+        var newPath = dirPath.substring(0, dirPath.lastIndexOf("/"))
         if (TextUtils.isEmpty(newPath)) {
             return true
         }

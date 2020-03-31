@@ -11,6 +11,12 @@ data class IMMessageModel(
     var header: String = "",
     var name: String = "",
     var content: String = "",
-    var uri: Uri? =null,
+    var mode: Int = MODE_TEXT,
     var phone: String = ""
-) : Serializable
+) : Serializable {
+    companion object {
+        const val MODE_TEXT = 0//文本模式
+        const val MODE_IMG = 1//图片模式
+        const val MODE_FILE = 2//文件模式
+    }
+}

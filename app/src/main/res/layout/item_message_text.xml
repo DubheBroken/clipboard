@@ -34,8 +34,8 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="昵称昵称昵称昵称昵称" />
 
-        <TextView
-            android:id="@+id/text_content_left"
+        <LinearLayout
+            android:id="@+id/llContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -46,12 +46,26 @@
             android:maxWidth="230dp"
             android:maxHeight="200dp"
             android:minHeight="48dp"
-            android:textColor="@color/black3"
-            android:textSize="16sp"
+            android:orientation="vertical"
             app:layout_constraintEnd_toStartOf="@+id/image_header_right"
             app:layout_constraintStart_toEndOf="@+id/image_header_left"
-            app:layout_constraintTop_toBottomOf="@+id/textNick"
-            tools:text="聊天内容" />
+            app:layout_constraintTop_toBottomOf="@+id/textNick">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/text_content_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black3"
+                android:textSize="16sp"
+                tools:text="聊天内容" />
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/image_header_right"
