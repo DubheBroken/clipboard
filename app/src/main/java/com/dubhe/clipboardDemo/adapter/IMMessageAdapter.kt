@@ -5,6 +5,7 @@ import android.content.Context
 import android.view.View
 import android.webkit.URLUtil
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
@@ -38,6 +39,7 @@ class IMMessageAdapter(var context: Context, data: MutableList<IMMessageModel>) 
         val imgSize = mContext.resources.getDimensionPixelOffset(R.dimen.im_img_size) * 2
         val dp16 = mContext.resources.getDimensionPixelOffset(R.dimen.dp_16)
         text_content_left.maxWidth = ScreenUtils.getRealScreenWidth(MyApplication.instant) - imgSize - dp16
+        img.maxWidth = ScreenUtils.getRealScreenWidth(MyApplication.instant) - imgSize - dp16
         val set = ConstraintSet()
         set.clone(constraint)
         if (bean.phone == "01234567890") {

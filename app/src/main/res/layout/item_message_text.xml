@@ -54,7 +54,9 @@
             <ImageView
                 android:id="@+id/img"
                 android:layout_width="wrap_content"
+                android:maxHeight="200dp"
                 android:layout_height="wrap_content"
+                android:scaleType="centerInside"
                 android:layout_gravity="center" />
 
             <TextView

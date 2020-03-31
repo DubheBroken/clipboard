@@ -62,7 +62,6 @@ class ImActivity : RiceBaseActivity() {
         val clipboardmanager: ClipboardManager? = mContext.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
         val clipData: ClipData? = clipboardmanager?.primaryClip
         val item = clipData?.getItemAt(0)
-        //获取uri
         val str: String? = item?.text.toString()
         val uri: Uri? = item?.uri
         val intent: Intent? = item?.intent

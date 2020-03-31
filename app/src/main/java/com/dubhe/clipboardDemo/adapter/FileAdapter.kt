@@ -66,18 +66,8 @@ class FileAdapter(data: MutableList<File?>, var dirPath: String) :
      * 复制文件
      */
     private fun copyFile(file: File) {
-        val clipboardmanager: ClipboardManager? =
-            mContext.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
-// Creates a Uri based on a base Uri and a record ID based on the contact's last name
-// Declares the base URI string
-
-// Declares a path string for URIs that you use to copy data
-
+        val clipboardmanager: ClipboardManager? = mContext.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
         val copyUri = Uri.parse("$file")
-
-// Creates a new URI clip object. The system uses the anonymous getContentResolver() object to
-// get MIME types from provider. The clip object's label is "URI", and its data is
-// the Uri previously created.
         val clip = ClipData.newUri(mContext.contentResolver, "URI", copyUri)
         clipboardmanager?.setPrimaryClip(clip)
         ToastUtil.showShort("文件${file.name}已复制到剪贴板")

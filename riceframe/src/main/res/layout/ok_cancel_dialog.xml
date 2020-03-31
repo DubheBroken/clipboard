@@ -78,7 +78,7 @@
             android:background="@drawable/bg_btn_ok"
             android:gravity="center"
             android:text="@string/ok"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="15sp" />
 
     </LinearLayout>
